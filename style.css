@@ -2,160 +2,113 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:"Cairo",sans-serif;
+font-family:Tahoma;
 }
 
 body{
-
 background:#0d0d0d;
 color:white;
-
 }
 
 header{
-
 display:flex;
 justify-content:space-between;
 align-items:center;
-
-padding:20px 8%;
-
+padding:20px 80px;
 background:#111;
-
-border-bottom:2px solid gold;
-
+border-bottom:1px solid #c8a55a;
 }
 
 .logo{
-
-font-size:30px;
+font-size:28px;
 font-weight:bold;
-color:gold;
-
+color:#d8b36a;
 }
 
 nav a{
-
 color:white;
-
 text-decoration:none;
-
-margin:0 15px;
-
+margin:20px;
 transition:.3s;
-
 }
 
 nav a:hover{
-
-color:gold;
-
+color:#d8b36a;
 }
 
 .hero{
-
 height:90vh;
-
+background:url("background.jpg") center/cover;
 display:flex;
-
-flex-direction:column;
-
-justify-content:center;
-
 align-items:center;
-
-text-align:center;
-
-background:url("images/background.jpg");
-
-background-size:cover;
-
 }
 
-.hero h1{
+.overlay{
+background:rgba(0,0,0,.6);
+width:100%;
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding-right:120px;
+}
 
+.overlay h1{
 font-size:65px;
-
-color:gold;
-
+color:#d8b36a;
+margin-bottom:20px;
 }
 
-.hero p{
-
-margin-top:20px;
-
+.overlay p{
 font-size:22px;
-
-width:70%;
-
+width:600px;
+line-height:2;
+margin-bottom:30px;
 }
 
-.hero button{
-
-margin-top:35px;
-
-padding:15px 45px;
-
-background:gold;
-
+button{
+background:#c8a55a;
 border:none;
-
-font-size:18px;
-
+padding:18px 40px;
+font-size:20px;
 cursor:pointer;
+border-radius:6px;
+transition:.3s;
+}
 
-border-radius:8px;
-
+button:hover{
+background:#e8c06c;
 }
 
 .cards{
-
 display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-
+grid-template-columns:repeat(4,1fr);
 gap:30px;
-
-padding:70px 10%;
-
+padding:70px;
 }
 
 .card{
-
-background:#171717;
-
-padding:40px;
-
-border:1px solid gold;
-
-border-radius:12px;
-
+background:#181818;
+padding:35px;
+border:1px solid #c8a55a;
+border-radius:10px;
 transition:.4s;
-
 }
 
 .card:hover{
-
 transform:translateY(-10px);
-
+box-shadow:0 0 20px #c8a55a;
 }
 
 .card h2{
-
-color:gold;
-
+color:#d8b36a;
 margin-bottom:15px;
-
 }
 
 footer{
-
-padding:30px;
-
 text-align:center;
-
+padding:30px;
 background:#111;
-
-border-top:2px solid gold;
-
+border-top:1px solid #c8a55a;
+margin-top:50px;
 }
